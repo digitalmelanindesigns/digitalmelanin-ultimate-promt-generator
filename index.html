@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="wrap">
+  <header class="top">
+    <div>
+      <div class="title">Glam Doll Prompt Builder</div>
+      <div class="subtitle">Build manually, or generate 3 preset-styled options and pick one.</div>
+    </div>
+
+    <div class="btnRow">
+      <button id="randBtn" class="btn">Randomize</button>
+      <button id="rand3Btn" class="btn btnPrimary">✨ Randomize 3 Styles</button>
+      <button id="clearBtn" class="btn btnGhost">Clear</button>
+    </div>
+  </header>
+
+  <section class="layout">
+    <div class="left">
+      <div class="sectionTitle">Builder Controls</div>
+      <div id="controls" class="controls"></div>
+    </div>
+
+    <div class="right">
+      <div class="sectionTitle">Your 3 Options</div>
+
+      <div class="optionGrid">
+        <div class="optBox">
+          <div class="optTop">
+            <strong>Option A</strong>
+            <span id="badgeA" class="badge">
+              <span class="dot"></span><span class="badgeText">—</span>
+            </span>
+          </div>
+          <textarea id="promptA" class="optPrompt" placeholder="Option A prompt..."></textarea>
+          <div class="optActions">
+            <button id="copyA" class="btn btnGhost">Copy</button>
+            <button id="useA" class="btn btnPrimary">Use This</button>
+          </div>
+        </div>
+
+        <div class="optBox">
+          <div class="optTop">
+            <strong>Option B</strong>
+            <span id="badgeB" class="badge">
+              <span class="dot"></span><span class="badgeText">—</span>
+            </span>
+          </div>
+          <textarea id="promptB" class="optPrompt" placeholder="Option B prompt..."></textarea>
+          <div class="optActions">
+            <button id="copyB" class="btn btnGhost">Copy</button>
+            <button id="useB" class="btn btnPrimary">Use This</button>
+          </div>
+        </div>
+
+        <div class="optBox">
+          <div class="optTop">
+            <strong>Option C</strong>
+            <span id="badgeC" class="badge">
+              <span class="dot"></span><span class="badgeText">—</span>
+            </span>
+          </div>
+          <textarea id="promptC" class="optPrompt" placeholder="Option C prompt..."></textarea>
+          <div class="optActions">
+            <button id="copyC" class="btn btnGhost">Copy</button>
+            <button id="useC" class="btn btnPrimary">Use This</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionTitle" style="margin-top:14px;">Prompt Output</div>
+      <textarea id="promptOut" class="promptOut" placeholder="Your final prompt will appear here..."></textarea>
+
+      <div class="btnRow" style="margin-top:10px;">
+        <button id="copyBtn" class="btn btnPrimary">Copy Prompt</button>
+        <button id="copyBtn2" class="btn btnGhost">Copy Prompt (Alt)</button>
+      </div>
+
+      <div id="toast" class="toast"></div>
+    </div>
+  </section>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
